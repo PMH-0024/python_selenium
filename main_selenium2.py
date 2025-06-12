@@ -1,8 +1,8 @@
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+driver = webdriver.Chrome()
 def get_all_information_to_excel(output_file = "Ma_so_thue_doanh_nghiep.xlsx"):
-    driver = webdriver.Firefox()
     try:
         all_information_page_dict = {}
         driver.get("https://thuvienphapluat.vn/ma-so-thue/tra-cuu-ma-so-thue-doanh-nghiep")
